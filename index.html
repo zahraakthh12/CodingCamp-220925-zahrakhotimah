@@ -34,21 +34,53 @@
      <!-- Main Content -->
       <main>
         <!-- Home Section -->
-        <section id="home" class="min-h-[100vh] flex flex-col justify-center items-center gap-4">
-            <h1 class="text-[36px] font-bold">Hi <span id="username"></span>, Welcome to Website!</h1>
-            <p class="text-[18px]">This is the first practice website using Visual Studio Code.</p>
+        <section id="home" class="h-full flex flex-col justify-center items-center gap-4 pt-10">
+            <h1 class="text-[50px] font-bold">Hi <span id="username"></span>, Welcome to Website!</h1>
+            <p class="text-[20px]">This is the first practice website using Visual Studio Code.</p>
+            <div class="relative min-w-[1366px] min-h-[578px] rounded-lg shadow-lg">
+                <img src="https://static.vecteezy.com/system/resources/previews/000/694/606/original/abstract-colorful-geometric-banner-template-background-vector.jpg"
+                alt="Banner" class="min-w-[1366px] min-h-[578px] object-cover rounded-lg opacity-30">
+                <div class="absolute inset-0 flex justify-center items-center">
+                    <p class="text-[28px] font-bold text-gray-800 drop-shadow-lg text-center px-4"
+                    >Build the skills your employees need to elevate your business digital growth. </p>
+                </div>
+            </div>
         </section>
 
         <hr>
 
         <!-- Profile Section -->
-        <section id="profile" class="min-h-[100vh] flex flex-col justify-center items-center gap-4 bg-yellow-200">
+        <section id="profile" class="h-full w-full flex flex-col justify-center items-center gap-4 bg-yellow-200 pt-15">
             <h2 class="text-[36px] font-bold">Our Profile</h2>
+            <h3 class="text-[25px] font-bold italic">About The Company</h3>
             <p class="text-[18px] text-center max-w-[800px]">RevoU is the largest professional live learning 
                 platform in Indonesia, helping ambitious students and driven employees upskill to become the best 
                 professional versions of themselves.</p>
-            <h3 class="text-2xl font-bold mb-10 mt-20">Our Headquarter</h3>
-            <div class="flex gap-16">
+            <p class="text-[18px] text-center max-w-[800px]">Founded in 2020, RevoU has helped over 3,000 
+                students and professionals to achieve their career goals through our comprehensive programs in 
+                Digital Marketing, Data Analytics, and Software Engineering.</p>
+            <h3 class="text-[25px] font-bold italic mt-10">Vision & Mission</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Box Visi -->
+                 <div class="bg-white p-6 rounded-2xl shadow-lg">
+                    <h3 class="text-xl font-semibold mb-4">Vision</h3>
+                    <p class="text-gray-700 leading-relaxed">To become a leading company in digital transformation by delivering
+          innovative solutions that create a positive impact on society and businesses.</p> 
+                </div>
+                <!-- Box Misi -->
+                <div class="bg-white p-6 rounded-2xl shadow-lg">
+                    <h3 class="text-xl font-semibold mb-4">Misi</h3>
+                    <ul class="list-disc list-inside text-gray-700 leading-relaxed">
+                        <li>Provide high-quality technology-based services.</li>
+                        <li>Develop creative and professional human resources.</li>
+                        <li>Support clients' digital growth sustainably.</li>
+                        <li>Innovate in delivering products that are relevant to market needs.</li>
+                    </ul>
+                </div>
+            </div>
+
+                <h3 class="text-2xl font-bold mb-10 mt-20">Our Headquarter</h3>
+            <div class="flex gap-16 pb-20">
                 <!-- Jakarta -->
                  <div class="flex flex-col items-center">
                     <div class="w-32 h-32 border-2 border-black-400 rounded-full bg-white"></div>
@@ -121,34 +153,6 @@
                 </div>
             </div>
         </section>
-
-        <!-- Message Us Section -->
-        <!-- <section id="message-us" class="min-h-[100vh] flex flex-col justify-left items-left pl-25 pt-10 gap-4">
-            <h2 class="text-[36px] font-bold">Message Us</h2>
-            <p class="text-[18px]">We would love to hear from you! Please reach out with any questions.</p>
-            <form>
-                <div class="mb-[10px]">
-                    <label for="name" class="block text-[18px] mb-[5px] font-bold">Name:</label>
-                    <input type="text" id="name" name="name" class="border p-[8px] rounded w-[350px]" required>
-                </div>
-                <div class="mb-[10px]">
-                    <label for="birthdate" class="block text-[18px] mb-[5px] font-bold">Date of Birth:</label>
-                    <input type="date" id="birthdate" name="birthdate" class="border p-[8px] rounded w-[350px]" required>
-                </div>
-                <div class="mb-[10px]">
-                    <p class="block text-[18px] mb-[5px] font-bold">Gender:</p>
-                    <input type="radio" id="male" name="gender" value="Male" class="mr-[5px]" required>
-                    <label for="male">Male</label>
-                    <input type="radio" id="female" name="gender" value="Female" class="ml-[20px] mr-[5px]" required>
-                    <label for="female">Female</label>
-                </div>
-                <div class="mb-[10px]">
-                    <label for="message" class="block text-[18px] mb-[5px] font-bold">Message:</label>
-                    <textarea id="message" name="message" class="border p-[8px] rounded w-[350px] h-[150px]" required></textarea>
-                </div>
-                <button type="button" onclick="validateForm()" class="bg-yellow-200 text-black p-[10px] rounded hover:bg-orange-300 border">Submit</button>
-            </form>
-        </section> -->
 
         <hr>
       </main>
